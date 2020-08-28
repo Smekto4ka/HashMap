@@ -3,17 +3,17 @@ package com.hash;
 public class Main {
 
     public static void main(String[] args) {
-        HashMap<String, String> hashMap = new HashMap<>(3);
+        HashMap<MyObject,Phone> hashMap = new HashMap<>(3);
 
-        hashMap.put("asdfgg", "789456123");
-        hashMap.put("qwert", "7417");
-        hashMap.put("asdfgg", "78921");
-        hashMap.put("qsdfgm", "88");
-        hashMap.put("[lkjbvc]", "753");
+        hashMap.put(new MyObject(10,20,30), new Phone("789456123"));
+        hashMap.put(new MyObject(14,12,58), new Phone("7417"));
+        hashMap.put(new MyObject(74, 52 ,69), new Phone("78921"));
+        hashMap.put(new MyObject(10,20,30), new Phone("88"));
+        hashMap.put(new MyObject(14,12,58), new Phone("753"));
 
-      System.out.println(hashMap.remove("asdfgg"));
-        System.out.println(hashMap.remove("qwert"));
-        System.out.println(hashMap.remove("qsdfgm"));
+      System.out.println(hashMap.remove(new MyObject(10,20,30)).getName());// getName есть у класса Phone
+        System.out.println(hashMap.remove(new MyObject(14,12,58)).getName());
+        System.out.println(hashMap.remove(new MyObject(14,12,58))); //  null.getName -- Exception
 
 
 
