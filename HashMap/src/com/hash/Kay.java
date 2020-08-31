@@ -14,16 +14,16 @@ public class Kay<K, V> {
     public K getKay() {
         return kay;
     }
-/*
-    public void setKay(K kay) {
+
+   /* public void setKay(K kay) {
         this.kay = kay;
-    }
-*/
+    }*/
+
     public V getValue() {
         return data;
     }
 
-    public void setData(V data) {
+    public void setValue(V data) {
         this.data = data;
     }
 

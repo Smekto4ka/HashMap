@@ -25,7 +25,7 @@ public class HashMap<K, V> {
         if (0 < size(kay)) {
             for (Object k : mass[id(kay)]) {
                 if (((Kay) k).getKay().equals(kay)) {
-                    ((Kay) k).setData(value);
+                    ((Kay) k).setValue(value);
                     return;
                 }
             }
